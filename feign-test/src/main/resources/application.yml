@@ -1,0 +1,25 @@
+server:
+  port: 8701
+
+spring:
+  application:
+    name: feign-test
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8101/eureka/
+
+
+
+
+#在Feign中开启Hystrix
+feign:
+  hystrix:
+    enabled: true
+
+logging:
+  level:
+    com.example.feigntest.service: debug

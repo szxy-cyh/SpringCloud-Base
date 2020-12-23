@@ -1,0 +1,14 @@
+#服务端口
+server:
+  port: 8101
+
+# 服务名称
+spring:
+  application:
+    name: eureka-server-test
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
